@@ -23,7 +23,6 @@ void setup()
   }
   Serial.println("Setup Completed. All Locker OFF");
 }
-//bool test = true;
 void loop() 
 { 
   delay(5000);
