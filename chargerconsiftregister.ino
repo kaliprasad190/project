@@ -1,14 +1,5 @@
 #define CHARGER 0
 #define LOCKER 1
-/*int latchPin[2] = {8,4};
-int clockPin[2] = {9,5};
-int dataPin[2] = {10,6};*/
-/***** Pin Declaration for Due *******/
-/* Charger Control On 0 Bit
-/*int latchPin[2] = {31,30};
-int clockPin[2] = {33,32};
-int dataPin[2] = {35,34};*/
-/* Locker Control on 0 Bit */
 int latchPin[2] = {30,31};
 int clockPin[2] = {32,33};
 int dataPin[2] = {34,35};
@@ -36,37 +27,7 @@ void setup()
 void loop() 
 { 
   delay(5000);
-  /*if(test)
-  {
-    Serial.println("Charger 2 ON ");  
-    switchCharger(2,1); // Command To on Locker, ON          
-    Serial.println("**********************************");  
-    test =false;
-  }*/
-  /*for(int i=0;i<2;i++)
-  {
-    Serial.print("************Running Sequence : ");
-    Serial.print(i);
-    Serial.println("************");
-    Serial.print("Register sequence : ");
-    Serial.print(0);
-    Serial.println("Status - All ON Sent");  
-    sendDataToRegister(getLockerONCode(-1),0);
-    Serial.print("Register sequence : ");
-    Serial.print(1);
-    Serial.println("Status - All ON Sent");
-    sendDataToRegister(getLockerONCode(-1),1);
-    delay(15000);
-    Serial.print("Register sequence : ");
-    Serial.print(0);
-    Serial.println("Status - All OFF Sent");  
-    sendDataToRegister(getLockerOFFCode(-1),0);  
-    Serial.print("Register sequence : ");
-    Serial.print(1);
-    Serial.println("Status - All OFF Sent");
-    sendDataToRegister(getLockerOFFCode(-1),1); 
-    delay(15000);
-  }*/
+ 
   
   if(Serial.available() > 0)
   {    
